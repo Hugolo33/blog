@@ -1,0 +1,9 @@
+<div class="posts">
+    <div class="blog" *ngFor="let item of post">
+        <h3>{{item.titulo}}</h3>
+        <p>{{item.texto}}</p>
+        <p>{{item.autor}}</p>
+        <img [src]="item.imagen">
+        <p>{{item.categoria}}</p>
+    </div>
+</div>
