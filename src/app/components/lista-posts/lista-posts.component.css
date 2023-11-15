@@ -1,0 +1,15 @@
+.blogs {
+    display: flex;
+    width: 400px;
+    border: solid 1px black;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -7,7 +7,7 @@ import { IPost } from '../interfaces/blog.interface';
 })
 export class PostService {
 
-  private arrPosts: IPost[];
+  arrPosts: IPost[];
 
   constructor() {
     this.arrPosts = [
@@ -88,13 +88,16 @@ export class PostService {
   }
 
   getByCategoria(categoria: string): IPost[] {
-    const postCategoria: IPost[] = [];
-    for (let post of this.arrPosts) {
-      if (post.categoria === categoria) {
-        postCategoria.push(post);
-      }
-    }
-    return postCategoria;
+    // const postCategoria: IPost[] = [];
+    // for (let post of this.arrPosts) {
+    //   if (post.categoria === categoria) {
+    //     postCategoria.push(post);
+    //   }
+    // }
+    // return postCategoria;
+
+    const filtrados = this.arrPosts.filter(post => post.categoria === categoria);
+    return filtrados;
   }
 
 }
