@@ -12,11 +12,16 @@ import { PostService } from 'src/app/services/post.service';
 export class ListaPostsComponent {
 
   post: IPost[] = [];
+  arrPosts: any[] = [];
 
 
   postService = inject(PostService);
 
   ngOnInit() {
     this.post = this.postService.getAll();
+    // this.arrPosts = this.postService.getByCategoria();
+
   }
+
+
 }
