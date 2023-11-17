@@ -1,4 +1,17 @@
 <div class="container">
+    <div class="mb-3">
+        <label class="form-label"></label>
+        <select class="form-select" (change)="onChange($event)">
+            <option value="categoria">Categorias</option>
+            <option value="viajes">Viajes</option>
+            <option value="programacion">Programacion</option>
+            <option value="juegos">Juegos</option>
+            <option value="gastronomia">Gastronomia</option>
+            <option value="aventura">Aventura</option>
+            <option value="musica">Musica</option>
+            <option value="deportes">Deportes</option>
+        </select>
+    </div>
     <div class="blogs">
         <article class="blog" *ngFor="let item of post">
             <h3>{{item.titulo}}</h3>
@@ -6,6 +19,9 @@
             <p>{{item.autor}}</p>
             <img [src]="item.imagen">
             <p>{{item.categoria}}</p>
+            <p>{{item.fecha}}</p>
         </article>
+
     </div>
+
 </div>

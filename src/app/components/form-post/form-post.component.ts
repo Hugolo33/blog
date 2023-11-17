@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { PostService } from 'src/app/services/post.service';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'form-post',
@@ -11,6 +12,7 @@ export class FormPostComponent {
 
 
   postService = inject(PostService);
+  router = inject(Router);
 
   formPost: FormGroup;
 
@@ -25,7 +27,8 @@ export class FormPostComponent {
     });
   }
   onSubmit() {
-    console.log(this.formPost.value);
+    this.postService.createPost(this.formPost.value);
+    this.router.navigate(['/blogs']);
 
   }
 

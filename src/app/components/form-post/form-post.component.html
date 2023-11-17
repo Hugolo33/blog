@@ -1,6 +1,7 @@
 <form [formGroup]="formPost" (ngSubmit)="onSubmit()">
 
     <div class="container">
+
         <div class="mb-3">
             <label class="form-label">Titulo</label>
             <input type="text" class="form-control" formControlName="titulo">
@@ -14,6 +15,10 @@
             <input type="text" class="form-control" formControlName="autor">
         </div>
         <div class="mb-3">
+            <label class="form-label">Imagen</label>
+            <input type="text" class="form-control" formControlName="imagen">
+        </div>
+        <div class="mb-3">
             <label class="form-label">Fecha</label>
             <input type="date" class="form-control" formControlName="fecha">
         </div>
@@ -21,5 +26,7 @@
             <label class="form-label">Categoria</label>
             <input type="text" class="form-control" formControlName="categoria">
         </div>
+        <input type="submit" value="Enviar" class="btn btn-info">
     </div>
+
 </form>
