@@ -17,7 +17,7 @@ export class PostService {
         autor: "Ana Martínez",
         imagen: "https://s3.amazonaws.com/wordpress-production/wp-content/uploads/sites/19/2016/09/practicas-para-ser-un-buen-programador.jpg",
         fecha: "2023-01-10",
-        categoria: "Programación",
+        categoria: "programacion",
       },
       {
         titulo: "Recuerdos de mi viaje a París",
@@ -25,7 +25,7 @@ export class PostService {
         autor: "Carlos Sánchez",
         imagen: "https://i.pinimg.com/736x/f1/35/fc/f135fc7a58f2ea5f458e8265dbf92454.jpg",
         fecha: "2023-02-05",
-        categoria: "Viajes",
+        categoria: "viajes",
       },
       {
         titulo: "Mi primera maratón",
@@ -33,7 +33,7 @@ export class PostService {
         autor: "Laura Pérez",
         imagen: "https://c8.alamy.com/compes/2r49565/una-mujer-corriendo-a-lo-largo-de-la-carretera-durante-un-maraton-en-leiden-2r49565.jpg",
         fecha: "2023-03-20",
-        categoria: "Deportes",
+        categoria: "deportes",
       },
       {
         titulo: "Noche de música en vivo",
@@ -41,7 +41,7 @@ export class PostService {
         autor: "Alejandro Gutiérrez",
         imagen: "https://as1.ftcdn.net/v2/jpg/00/77/87/54/1000_F_77875439_KdYMIKXGEcGhfGniQL8tky98nhXeAeeL.jpg",
         fecha: "2023-04-15",
-        categoria: "Música",
+        categoria: "musica",
       },
       {
         titulo: "Aventuras en la naturaleza",
@@ -49,7 +49,7 @@ export class PostService {
         autor: "Elena Rodríguez",
         imagen: "https://img.freepik.com/foto-gratis/mujer-mochila-viaje_23-2148523876.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699401600&semt=ais",
         fecha: "2023-05-12",
-        categoria: "Aventura",
+        categoria: "aventura",
       },
       {
         titulo: "Descubriendo la gastronomía asiática",
@@ -57,7 +57,7 @@ export class PostService {
         autor: "Javier López",
         imagen: "https://img.freepik.com/foto-gratis/tiro-medio-hombre-feliz-comiendo_23-2148972801.jpg?size=626&ext=jpg&ga=GA1.1.1016474677.1696723200&semt=ais",
         fecha: "2023-08-14",
-        categoria: "Gastronomía",
+        categoria: "gastronomia",
       },
       {
         titulo: "Día de playa perfecto",
@@ -65,7 +65,7 @@ export class PostService {
         autor: "Carolina Martín",
         imagen: "https://media.istockphoto.com/id/1211311866/es/foto/elegante-mujer-casual-disfrutando-del-sol-en-la-playa-tropical.jpg?s=612x612&w=0&k=20&c=OZlhdPUXREiBpYjfoRhvLM5EAPAbOjbdMLHXJ_sjL3I=",
         fecha: "2023-09-21",
-        categoria: "Playa",
+        categoria: "viajes",
       },
       {
         titulo: "Noche de juegos de mesa",
@@ -73,7 +73,7 @@ export class PostService {
         autor: "Andrés Ramírez",
         imagen: "https://i.blogs.es/4d349b/1000_1000_6242349634_83982afdf5_b/450_1000.jpg",
         fecha: "2023-10-05",
-        categoria: "Juegos",
+        categoria: "juegos",
       },
     ];
 
@@ -99,5 +99,7 @@ export class PostService {
     const filtrados = this.arrPosts.filter(post => post.categoria === categoria);
     return filtrados;
   }
+
+
 
 }
