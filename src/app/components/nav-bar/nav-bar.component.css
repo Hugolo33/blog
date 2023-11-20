@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 73.125rem;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #1e3799;
+    color: whitesmoke;
+
+    & nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    & ul {
+        & li {
+            display: inline-block;
+            text-decoration: none;
+            padding: 20px;
+            font-weight: 700;
+            font-size: 20px;
+
+            &:hover {
+                color: #7bed9f;
+            }
+
+            cursor: pointer;
+        }
+
+
+    }
+}

@@ -12,16 +12,21 @@
             <option value="deportes">Deportes</option>
         </select>
     </div>
+
+
     <div class="blogs">
-        <article class="blog" *ngFor="let item of post">
+        <article class="articulos" *ngFor="let item of post">
+            <div class="image">
+                <img [src]="item.imagen">
+            </div>
             <h3>{{item.titulo}}</h3>
             <p>{{item.texto}}</p>
             <p>{{item.autor}}</p>
-            <img [src]="item.imagen">
             <p>{{item.categoria}}</p>
             <p>{{item.fecha}}</p>
         </article>
 
     </div>
+
 
 </div>
